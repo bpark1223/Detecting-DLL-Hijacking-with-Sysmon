@@ -1,4 +1,4 @@
-<h1> Detecting and  DLL hijacking attacks <h1>
+<h1> Detecting  DLL hijacking attacks <h1>
 
 <h2>Description</h2>
 In this cybersecurity project, I will detect DLL hijacks using Sysmon documentation. Sysmon is a Windows system service and device driver that logs system activity to the Windows event log, providing detailed information on process creations, network connections, and changes to file creation time. It uses an XML-based configuration file which allows you to include or exclude certain types of events based on different attributes like process names, IP addresses, etc. <br />
