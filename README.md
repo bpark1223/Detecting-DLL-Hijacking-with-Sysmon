@@ -21,7 +21,7 @@ sysmon.exe -c sysmonconfig-export.xml
 <img width="977" alt="Screenshot 2024-07-01 at 8 29 07 PM" src="https://github.com/bpark1223/Detecting-DLL-Hijacking-with-Sysmon/assets/77799235/750a07f2-364c-4f36-9cc0-9b3487c7892f">
 </p> 4. Now that the configuration is updated, I want to see the presence of the targeted Event ID 7. I open to Event Viewer and navigate to Sysmon (Applications and Services --> Microsoft --> Windows --> Sysmon) </p>
 <img width="1433" alt="Screenshot 2024-07-01 at 8 50 49 PM" src="https://github.com/bpark1223/Detecting-DLL-Hijacking-with-Sysmon/assets/77799235/ada94578-29bc-4afc-941e-6e08e7fcd07b">
-</p> 5. I want to proceed by building a detection mechanism. I will focus on a specific hijack involving the vulnerable executable calc.exe and a list of DLLs that can be hijacked by performing a reflective DLL attack. I go back to my Command Prompt to copy calc.exe (vulnerable executable) and reflective_dll.x64.dll (DLL which will be hijacked) to the desktop:</p>
+</p> 5. I proceed by attempting a specific DLL hijack involving the vulnerable executable calc.exe and DLL (WININET.dll). I go back to my Command Prompt to copy calc.exe (vulnerable executable) and reflective_dll.x64.dll (DLL which will be hijacked) to the desktop:</p>
 <img width="1353" alt="Screenshot 2024-07-01 at 9 08 48 PM" src="https://github.com/bpark1223/Detecting-DLL-Hijacking-with-Sysmon/assets/77799235/1d3ed5c6-40cc-43bd-a52c-81a3b59e9ba3">
 </p> 6. Then, I need to run calc.exe:</p>
 <img width="797" alt="Screenshot 2024-07-01 at 9 12 24 PM" src="https://github.com/bpark1223/Detecting-DLL-Hijacking-with-Sysmon/assets/77799235/10e428af-551c-4306-bebb-217e886e9cf3">
