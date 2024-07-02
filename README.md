@@ -27,8 +27,8 @@ sysmon.exe -c sysmonconfig-export.xml
 <img width="797" alt="Screenshot 2024-07-01 at 9 12 24 PM" src="https://github.com/bpark1223/Detecting-DLL-Hijacking-with-Sysmon/assets/77799235/10e428af-551c-4306-bebb-217e886e9cf3">
 </p> 7. I need to now go back to Event Viewer and filter the Sysmon Operational logs by Event ID 7 </p>
 <img width="1424" alt="Screenshot 2024-07-01 at 9 16 29 PM" src="https://github.com/bpark1223/Detecting-DLL-Hijacking-with-Sysmon/assets/77799235/90301c17-2070-45be-bce3-3347c9f9ab78">
-</p> 8. I also need to use the "find" tool on the left hand side to find any instances of calc.exe:
+</p> 8. I also need to use the "find" tool on the right hand side to find any instances of calc.exe:
 <img width="1223" alt="Screenshot 2024-07-01 at 9 26 06 PM" src="https://github.com/bpark1223/Detecting-DLL-Hijacking-with-Sysmon/assets/77799235/afde037e-7ede-4cad-b8b0-94b190281b90">
-</p> 9. Clicking Find Next, eventually, students will find the Event, which shows the loading of WININET.dll, and its corresponding hashes: </p>
+</p> 9. Clicking Find Next, eventually, I  find the Event, which shows the loading of WININET.dll, and its corresponding hashes: </p>
 <img width="935" alt=" " src="https://github.com/bpark1223/Detecting-DLL-Hijacking-with-Sysmon/assets/77799235/4cf530b8-90d9-47d5-afc2-16d922cbf59e">
 </p> 10. 
